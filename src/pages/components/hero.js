@@ -109,7 +109,7 @@ export default function Hero() {
               >
               Volunteers
               </Heading>
-            <AvatarGroup py={'15px'} size='md' max={4}>
+            <AvatarGroup py={'16px'} size='md' max={4}>
   <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' />
   <Avatar name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
   <Avatar name='Kent Dodds' src='https://bit.ly/kent-c-dodds' />
