@@ -19,3 +19,7 @@ const sizes = {
 }
 
 export const inputTheme = defineMultiStyleConfig({ sizes })
+
+export default function Home1() {
+  return <>{/* nothing */}</>;
+}
