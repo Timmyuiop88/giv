@@ -1,7 +1,7 @@
 // pages/_app.js
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import '@fontsource-variable/rubik';
-import { inputTheme } from './input.js'
+import { inputTheme } from './utils/input.js'
 const theme = extendTheme({
   fonts: {
     heading: `'Rubik Variable', sans-serif`,
