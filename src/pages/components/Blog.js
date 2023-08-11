@@ -14,7 +14,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import { FaChevronRight,FaChevronLeft } from "react-icons/fa6";
-import { Image } from "@chakra-ui/react";
+import Image from 'next/image'
 export default function Blog() {
   return (
     <Box w={"100%"} h={"auto"} bg={""} pt={"50px"}>
@@ -75,7 +75,9 @@ export default function Blog() {
         h={'690px'}
        
         >
-            <Image src="images/blog2.png" w={'100%'} h={'448px'}/>
+            <Image src="/images/blog2.png"
+            alt="blog image"
+            width={'512'} height={'448'}/>
 <Heading
 w={'100%'}
 fontSize={['15px','15px','20px','24px']}
@@ -105,7 +107,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis pellentesque cras
         h={'690px'}
        
         >
-                   <Image src="images/blog1.png" w={'100%'} h={'448px'}/>
+                   <Image src="/images/blog1.png" alt="blog image"
+            width={'512'} height={'448'}/>
                    <Heading
 w={'100%'}
 fontSize={['15px','15px','20px','24px']}
@@ -135,7 +138,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis pellentesque cras
 
         >
             
-       <Image src="images/blog3.png" w={'100%'} h={'448px'}/>
+       <Image src="/images/blog3.png"  alt="blog image"
+            width={'512'} height={'448'}/>
        <Heading
 w={'100%'}
 fontSize={['15px','15px','20px','24px']}

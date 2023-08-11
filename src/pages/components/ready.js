@@ -12,9 +12,9 @@ import {
     Hide,
     Wrap,
     WrapItem,
-    Image
+  
   } from "@chakra-ui/react";
-
+  import Image from 'next/image'
 
 export default function Ready(){
     return(
@@ -81,6 +81,7 @@ Ready to get started? Join
 thousands of others today.
 </Heading>
 <Stack
+pt={'15px'}
 direction={['column','column','column','row']}
 w={'100%'}
 h={'auto'}
@@ -116,7 +117,14 @@ w={['100%','100%','40%','40%']}
 h={['50%','50%','100%','100%']}
 p={10}
 >
-<Image src="images/ready.svg" h={['50%','50%','100%','100%']} w={['50%','50%','100%','100%']}/>
+<Image 
+
+src="images/ready.svg" 
+alt="ready image"
+height={'284'}
+width={'284'}
+
+/>
 </Center>
 <Hide below="md">
                     <Box

@@ -68,3 +68,22 @@
         </Stack>
       </Box>
     </div>
+
+
+    <Carousel 
+ plugins={[
+    'centered',
+    'infinite',
+    'arrows',
+    {
+      resolve: slidesToShowPlugin,
+      options: {
+       numberOfSlides: 3
+      }
+    },
+  ]}
+>
+        <img src={'images/hero.svg'} alt="n img"/>
+        <Box h={'300px'} w={'200px'} bg={'yellow'} className="item" data-value="1">1</Box>
+        <img src={'images/hero.svg'} />
+      </Carousel>

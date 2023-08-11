@@ -15,7 +15,7 @@ Progress,
 Card, CardHeader, CardBody, CardFooter,
 Divider,ButtonGroup,OrderedList,ListItem
 } from "@chakra-ui/react";
-  import { Image } from "@chakra-ui/react";
+import Image from 'next/image'
 export default function Fund(props){
     
     return(
@@ -24,12 +24,22 @@ export default function Fund(props){
       <CardBody >
      
         <Image
-          src='images/donate.png'
+        width={'348'}
+        height={'232'}
+          src='/images/donate.png'
           alt='Green double couch with wooden legs'
           borderRadius='lg'
         />
         <Stack mt='6' spacing='10px'>
-          <Heading size='md'>Raising Money for Burnt Property</Heading>
+          <Heading 
+          
+          fontSize={'15px'}
+          
+         fontWeight={'700'}
+         lineHeight={'24px'}
+          
+          
+          >Raising Money for Burnt Property</Heading>
           <Text
           
            color={'#767676'}

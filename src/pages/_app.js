@@ -1,5 +1,8 @@
 // pages/_app.js
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { React, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '@fontsource-variable/rubik';
 import { inputTheme } from './utils/input.js'
 const theme = extendTheme({
@@ -22,6 +25,14 @@ const theme = extendTheme({
 
 })
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'DOMContentLoaded',
+         duration: 800,
+         once: false,
+     
+       })
+ }, [])
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />

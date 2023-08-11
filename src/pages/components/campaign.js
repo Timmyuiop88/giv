@@ -29,8 +29,13 @@ export default function Campaign() {
 <Wrap
 m={'auto'}
 justify={['block','block','center','center']}
+
+
 >
-  <WrapItem>
+  <WrapItem
+  data-aos="fade-up"
+  data-aos-delay="50"
+  >
   <Box minW={['100%','100%','280px','280px']} w={['100%','100%','280px','280px']} h='auto'
     
     display={"flex"}
@@ -71,7 +76,11 @@ justify={['block','block','center','center']}
 
     </Box>
   </WrapItem>
-  <WrapItem>
+  <WrapItem
+  data-aos="fade-up"
+  data-aos-delay="100"
+  >
+
   <Box w={['100%','100%','280px','280px']} h='auto'
     
     display={"flex"}
@@ -111,7 +120,10 @@ justify={['block','block','center','center']}
 
     </Box>
   </WrapItem>
-  <WrapItem>
+  <WrapItem
+  data-aos="fade-up"
+  data-aos-delay="150"
+  >
     <Box w={['100%','100%','100%','100%']} h='auto'
               bg={''}
     display={"flex"}
@@ -151,7 +163,10 @@ ml={'20px'}
           </Box>
     </Box>
   </WrapItem>
-  <WrapItem>
+  <WrapItem
+  data-aos="fade-up"
+  data-aos-delay="200"
+  >
   <Box w={['100%','100%','280px','280px']} h='auto'
     
     display={"flex"}

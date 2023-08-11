@@ -13,14 +13,9 @@ import {
   chakra, shouldForwardProp
 } from "@chakra-ui/react";
 import Nav from "./nav";
-import { Image } from "@chakra-ui/react";
-import { motion, isValidMotionProp } from 'framer-motion';
-const ChakraBox = chakra(motion.div, {
-  /**
-   * Allow motion props and non-Chakra props to be forwarded.
-   */
-  shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
-});
+import Image from 'next/image'
+
+
 export default function Hero() {
   return (
  <Box 
@@ -40,11 +35,8 @@ export default function Hero() {
  pt={'50px'}
  m={'auto'}
   >
-    <ChakraBox
-    initial={{ opacity: 0, x: 15}}
-    animate={{ opacity: 1, x: 0}}
-    exit={{ opacity: 0, x: 15}}
-    transition={{delay: 0.25}}
+    <Box
+
     w={['100%','100%','50%','50%']}
     h={'100%'}
     textAlign={['center','center','left','left']}
@@ -53,11 +45,14 @@ export default function Hero() {
     >
 
 
-<Text fontSize={[]}>TRUSTED FUNDRAISING COMPANY</Text>
+<Text  data-aos="fade-up"
+  fontSize={[]}>TRUSTED FUNDRAISING COMPANY</Text>
             <Heading
               color={"#232323"}
               fontSize={["32px", "32px", "40px", "50px"]}
               fontWeight={"500"}
+              data-aos="fade-up"
+              
             >
               Let’s Help And Make People Smile By{" "}
               <Text as={"span"} color={"#FFBE37"}>
@@ -72,29 +67,41 @@ export default function Hero() {
               fontStyle={"normal"}
               color={"#696969"}
               mt={["20px", "20px", "33px", "33px"]}
+              data-aos="fade-up"
+              data-aos-duration="200"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-              pellentesque cras interdum ornare feugiat eget feugiat. Nunc, urna
-              vitae pellentesque risus, ut volutpat eget libero vel.
+           At Givaa, we're turning compassion into action, one campaign at a time. Join us in empowering dreams and shaping a brighter future across Africa. Let's make progress together.
             </Text>
-            <Box
-         
+            <Stack
+            direction={['column','column','row','row']}
+     
               px={'20px'}
               mt={["30px", "30px", "55px", "55px"]}
-              display={"flex"}
-              justifyContent={'space-between'}
+             
             >
               <Button
-                h={"60px"}
-                w={["full","full","262px","262px"]}
+              m={'auto'}
+                h={"50px"}
+                w={["250PX","200px","262px","262px"]}
                 bg={"#FFBE37"}
                 borderRadius={"105px"}
-                color={"white"}
+                color={"#fdfdfd"}
               >
                 Start Fundraising
               </Button>
+              <Button
+              m={'auto'}
+                h={"50px"}
+                w={["250px","200px","262px","262px"]}
+                bg={"#fdfdfd"}
+                borderRadius={"105px"}
+                color={"#333"}
+                border={'1px solid #C8C8C8'}
+              >
+                View Campaigns
+              </Button>
       
-            </Box>
+            </Stack>
             <Box
             w={'100%'}
             h={'auto'}
@@ -118,22 +125,30 @@ export default function Hero() {
 </AvatarGroup>
             </Box>
 
-    </ChakraBox>
+    </Box>
 
-    <ChakraBox
-     initial={{ opacity: 0, y: 15}}
-     animate={{ opacity: 1, y: 0}}
-     exit={{ opacity: 0, y: 15}}
-     transition={{delay: 0.25}}
+    <Box
+    
     w={['100%','100%','50%','50%']}
     h={'auto'}
    pb={['14px','14px','30px','60px']}
     >
-      <Image src="images/hero.svg"
+      <Image
+      
+      data-aos="fade-up"
+      
+      data-aos-duration="200"
+      src="images/hero.svg"
       m={'auto'}
-      w={['300px','300px','500px','600px']}/>
-
-</ChakraBox>
+      width={'600'}
+      height={'500'}
+      alt="Picture of the author"
+      />
+   
+  
+  
+  
+</Box>
 
   </Stack>
 

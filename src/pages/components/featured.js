@@ -10,7 +10,6 @@ import {
     Flex,
     Center,
     Hide,
-    chakra, shouldForwardProp
   } from "@chakra-ui/react";
   import Fund from "./fund";
   import { useRef, useEffect, useState } from "react";
@@ -21,34 +20,8 @@ import {
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
   };
-  import { motion, isValidMotionProp,Variants,useAnimation, useScroll } from 'framer-motion';
-  import { useInView } from "react-intersection-observer";
-  const ChakraBox = chakra(motion.div, {
-    /**
-     * Allow motion props and non-Chakra props to be forwarded.
-     */
-    shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
-  });
-  const boxVariant = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
-    hidden: { opacity: 0, scale: 0 }
-  };
+
 export default function Featured(){
-useScroll({
-  target:'',
-  offset:["0 1", "1.33 1"] 
-})
-
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
     return(
 
         <Box
@@ -57,72 +30,57 @@ useScroll({
       
         pb={10}
         >
-            <ChakraBox
-
-ref={ref}
-      variants={boxVariant}
-      initial="hidden"
-      animate={control}
-                 
+            <Stack
             direction={'column'}
             w={'100%'}
             maxW={'6xl'}
             h={'auto'}
             m={'auto'}
-            
-            pt={20}
+           
+            pt={['20px','20px','40px','50px']}
+            spacing={0}
             >
       
                 <Box
-          p={5}
                 w={'100%'}
                 h={'auto'}
-              textAlign={['left','left','center','center']}
+              textAlign={'center'}
+           
+            
                 >
                     <Heading
-                    fontSize={'54px'}
+                    pl={'25px'}
                     color={'#4D4D4D'}
-                    fontWeight={600}
+                    fontSize={'54px'}
+                    fontWeight={'600'}
                     lineHeight={'75px'}
                     letterSpacing={'0.54px'}
+                    textAlign={'left'}
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    
                     >
                     Featured Projects
                     </Heading>
 
                 </Box>
-                <Box
-               px={'5'}
-                w={'100%'}
-                h={'auto'}
-                maxW={'3xl'}
-                m={'auto'}
                 
-              textAlign={'center'}
-                >
-                    <Text
-                    fontSize={'16px'}
-                    fontWeight={'400px'}
-                    lineHeight={'normal'}
-                    letterSpacing={'0.16px'}
-                    color={'#1D2C29'}
-                    textAlign={['left','left','center','center']}
-                    >
-                    Lorem ipsum dolor sit amet consectetur. Porttitor diam mauris tincidunt ipsum ut nulla auctor at. Massa pellentesque.
-                    </Text>
-
-                </Box>
 <Box w={'100%'}
-pl={['5px','5px',10,10]}
+
+pl={['10px','10px',10,10]}
 h={'auto'}
 m={'auto'}
-pb={20}
+pb={['20px','20px','40px','50px']}
 display={'flex'}
 justifyContent={'space-between'}
 
 alignItems={'center'}
-pr={['5','5',10,10]}
+pr={['0px','0px',10,10]}
 >
   <Stack
+ 
+   data-aos="fade-up"
+   data-aos-duration="1000"
  direction={'row'}
  alignItems={'center'}
  spacing={10}
@@ -176,7 +134,7 @@ ref={ref}
   justifyContent={"left"}
   m={"auto"}
   w={"100%"}
-  pt={10}
+  pt={['10px','10px','40px','50px']}
   spacing={0}
 >
   
@@ -259,7 +217,7 @@ className="right-arrow"
                 
 
 
-            </ChakraBox>
+            </Stack>
 
         </Box>
     )

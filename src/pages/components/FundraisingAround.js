@@ -126,7 +126,7 @@ ref={ref}
   
 
    <Fund
-    w={['280px','320px','350px','350px']}
+    w={['320px','320px','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
@@ -135,7 +135,7 @@ ref={ref}
     TimeRemaining="250"
   />
    <Fund
-    w={['280px','320px','350px','350px']}
+    w={['320px','320px','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
@@ -144,7 +144,7 @@ ref={ref}
     TimeRemaining="250"
   />
   <Fund
-    w={['280px','320px','350px','350px']}
+    w={['320px','320px','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
@@ -153,7 +153,7 @@ ref={ref}
     TimeRemaining="250"
   />
   <Fund
-  w={['280px','320px','350px','350px']}
+  w={['320px','320px','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
@@ -162,7 +162,7 @@ ref={ref}
     TimeRemaining="250"
   />
   <Fund
-  w={['280px','320px','350px','350px']}
+  w={['320px','320px','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
