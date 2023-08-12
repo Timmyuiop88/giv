@@ -33,6 +33,7 @@ import {
   AiOutlineInbox,
   AiOutlineSearch,
   AiFillBell,
+  AiOutlineClose
 } from "react-icons/ai";
 export default function Nav() {
   const mobileNav = useDisclosure();
@@ -49,6 +50,8 @@ export default function Nav() {
     );
   };
   return (
+    <>
+    
     <Stack
 
  pl={['0px','0px','10px','10px']}
@@ -99,78 +102,25 @@ pr={['0px','0px','10px','10px']}
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="gray.800"
-                _dark={{ color: "inherit" }}
-                variant="ghost"
-                icon={        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-                <path d="M3.375 8.375H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3.375 14H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3.375 19.625H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>}
-                onClick={mobileNav.onOpen}
+              bg={'none'}
+              
+                _hover={{ bg: "#FFBE37" }}
+                icon={mobileNav.isOpen ?
+                  <AiOutlineClose
+                  color="#ffffff"
+                  fontSize={'30px'}
+                  />
+                  : 
+                   <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                  <path d="M3.375 8.375H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M3.375 14H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M3.375 19.625H23.625" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>}
+               
+               
+                onClick={mobileNav.isOpen ? mobileNav.onClose: mobileNav.onOpen}
               />
-              <VStack
-                pos="absolute"
-                zIndex={'300'}
-                top={0}
-                left={0}
-                right={0}
-                display={mobileNav.isOpen ? "flex" : "none"}
-                flexDirection="column"
-            pt={'20px'}
-                pb={4}
-                pl={'20px'}
-                pr={'20px'}
-            w={'100%'}
-            m={'auto'}
-                bg={'#313131'}
-                spacing={3}
-                rounded="sm"
-                shadow="sm"
-                justifyContent={'right'}
-                align={'start'}
-              >
-                
-                <CloseButton
-                
-                w={'50px'}
-                h={'50px'}
-                bg={'#FFBE37'}
-                borderRadius={'50%'}
-                  aria-label="Close menu"
-                  justifySelf="self-start"
-                  onClick={mobileNav.onClose}
-                />
-                 <MenuItem to="/explore">Explore</MenuItem>
-                 <MenuItem to="/about">About</MenuItem>
-        <MenuItem to="/donate">Donation</MenuItem>
-
-        
-        <MenuItem to="/">Blog</MenuItem>
-       
-          <Button
-            border={"1px solid white"}
-            h={"60px"}
-            w={"100%"}
-            borderRadius={"11811px"}
-            colorScheme=""
-          >
-            Sign in
-          </Button>
-      
-       
-          <Button
-            border={"1px solid #FFBE37"}
-            h={"60px"}
-            w={"100%"}
-            borderRadius={"11811px"}
-            color={"#1B1B18"}
-            bg={"#FFBE37"}
-          >
-            Sign up
-          </Button>
-       
-              </VStack>
+              
             </Box>
 
 
@@ -205,5 +155,58 @@ pr={['0px','0px','10px','10px']}
         </Show>
       </Box>
     </Stack>
+    <VStack
+             
+               
+                zIndex={'300'}
+               color={'#FFFFFF'}
+                display={mobileNav.isOpen ? "flex" : "none"}
+                flexDirection="column"
+            pt={'20px'}
+                pb={4}
+                pl={'20px'}
+                pr={'20px'}
+            w={'100%'}
+            m={'auto'}
+                bg={'#313131'}
+                spacing={3}
+             
+                justifyContent={'right'}
+                align='start'
+                
+              >
+                
+               
+                 <MenuItem to="/explore">Explore</MenuItem>
+                 <MenuItem to="/about">About</MenuItem>
+        <MenuItem to="/donate">Donation</MenuItem>
+
+        
+        <MenuItem to="/">Blog</MenuItem>
+       
+          <Button
+            border={"1px solid white"}
+            h={"60px"}
+            w={"100%"}
+            borderRadius={"11811px"}
+            colorScheme=""
+          >
+            Sign in
+          </Button>
+      
+       
+          <Button
+            border={"1px solid #FFBE37"}
+            h={"60px"}
+            w={"100%"}
+            borderRadius={"11811px"}
+            color={"#1B1B18"}
+            bg={"#FFBE37"}
+          >
+            Sign up
+          </Button>
+       
+              </VStack>
+    </>
   );
 }

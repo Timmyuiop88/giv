@@ -27,7 +27,7 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
-      startEvent: 'DOMContentLoaded',
+      startEvent: 'load',
          duration: 800,
          once: false,
      
