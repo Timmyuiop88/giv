@@ -80,7 +80,7 @@ justify={['block','block','center','center']}
   </WrapItem>
   <WrapItem
   data-aos="fade-up"
-  data-aos-delay="100"
+  data-aos-delay="50"
   >
 
   <Box w={['100%','100%','280px','280px']} h='auto'
@@ -124,7 +124,7 @@ justify={['block','block','center','center']}
   </WrapItem>
   <WrapItem
   data-aos="fade-up"
-  data-aos-delay="150"
+  data-aos-delay="50"
   >
     <Box w={['100%','100%','100%','100%']} h='auto'
               bg={''}
@@ -167,7 +167,7 @@ ml={'20px'}
   </WrapItem>
   <WrapItem
   data-aos="fade-up"
-  data-aos-delay="200"
+  data-aos-delay="50"
   >
   <Box w={['100%','100%','280px','280px']} h='auto'
     

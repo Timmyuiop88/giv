@@ -47,13 +47,13 @@ export default function Hero() {
     >
 
 
-<Text  data-aos="fade-up"
-  fontSize={[]}>TRUSTED FUNDRAISING COMPANY</Text>
+<Text  
+  >TRUSTED FUNDRAISING COMPANY</Text>
             <Heading
               color={"#232323"}
               fontSize={["32px", "32px", "40px", "50px"]}
               fontWeight={"500"}
-              data-aos="fade-up"
+            
               
             >
               Let’s Help And Make People Smile By{" "}
@@ -69,8 +69,7 @@ export default function Hero() {
               fontStyle={"normal"}
               color={"#696969"}
               mt={["20px", "20px", "33px", "33px"]}
-              data-aos="fade-up"
-              data-aos-duration="200"
+             
             >
            At Givaa, we're turning compassion into action, one campaign at a time. Join us in empowering dreams and shaping a brighter future across Africa. Let's make progress together.
             </Text>
@@ -137,9 +136,7 @@ export default function Hero() {
     >
       <Image
       
-      data-aos="fade-up"
-      
-      data-aos-duration="200"
+     
       src="images/hero.svg"
       m={'auto'}
       width={'600'}
