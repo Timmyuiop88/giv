@@ -15,7 +15,9 @@ import {
   chakra, shouldForwardProp
 } from "@chakra-ui/react";
 import Nav from "./nav";
-import Image from 'next/image'
+import Image from 'next/image';
+import {BsArrowUpRight} from "react-icons/bs";
+import {RiExchangeFundsLine} from 'react-icons/ri'
 
 
 export default function Hero() {
@@ -48,6 +50,11 @@ export default function Hero() {
 
 
 <Text  
+fontSize={["10px","10px","15px","15px"]}
+fontWeight={"400"}
+lineHeight={["25px","25px","30px","30px"]}
+fontStyle={"normal"}
+color={"#696969"}
   >TRUSTED FUNDRAISING COMPANY</Text>
             <Heading
               color={"#232323"}
@@ -63,41 +70,46 @@ export default function Hero() {
               Of Yours
             </Heading>
             <Text
-              fontSize={"15px"}
+            
+              fontSize={["15px","15px","20px","20px"]}
               fontWeight={"400"}
-              lineHeight={"25px"}
+              lineHeight={["25px","25px","30px","30px"]}
               fontStyle={"normal"}
               color={"#696969"}
               mt={["20px", "20px", "33px", "33px"]}
              
             >
-           At Givaa, we're turning compassion into action, one campaign at a time. Join us in empowering dreams and shaping a brighter future across Africa. Let's make progress together.
+        Givaa is a digital platform for collecting donations to be distributed to people in need
             </Text>
             <Stack
             direction={['column','column','row','row']}
      
-              px={'20px'}
+              px={'0px'}
               mt={["30px", "30px", "55px", "55px"]}
              
             >
               <Button
-              m={'auto'}
+              m={['auto','auto','0','0']}
                 h={"50px"}
                 w={["250PX","200px","262px","262px"]}
                 bg={"#FFBE37"}
                 borderRadius={"105px"}
                 color={"#fdfdfd"}
+                fontWeight={'500'}
+                rightIcon={<RiExchangeFundsLine/>}
               >
                 Start Fundraising
               </Button>
               <Button
-              m={'auto'}
+     m={['auto','auto','0','0']}
                 h={"50px"}
                 w={["250px","200px","262px","262px"]}
                 bg={"#fdfdfd"}
                 borderRadius={"105px"}
                 color={"#333"}
                 border={'1px solid #C8C8C8'}
+                rightIcon={<BsArrowUpRight/>}
+                fontWeight={'500'}
               >
                 View Campaigns
               </Button>
@@ -109,21 +121,8 @@ export default function Hero() {
             px={'20px'}
             pt={'25px'}
             >
-              <Heading
-              textAlign={'left'}
-              fontSize={'20px'}
-              fontWeight={'500'}
-              color={'#232323'}
-              >
-              Volunteers
-              </Heading>
-            <AvatarGroup py={'16px'} size='md' max={4}>
-  <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' />
-  <Avatar name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
-  <Avatar name='Kent Dodds' src='https://bit.ly/kent-c-dodds' />
-  <Avatar name='Prosper Otemuyiwa' src='https://bit.ly/prosper-baba' />
-  <Avatar name='Christian Nwamba' src='https://bit.ly/code-beast' />
-</AvatarGroup>
+            
+           
             </Box>
 
     </Box>
@@ -139,9 +138,9 @@ export default function Hero() {
      
       src="images/hero.svg"
       m={'auto'}
-      width={'600'}
-      height={'500'}
-      alt="Picture of the author"
+      width={'500'}
+      height={'400'}
+      alt="Hero image"
       />
    
   

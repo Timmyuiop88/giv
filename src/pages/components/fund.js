@@ -28,7 +28,7 @@ export default function Fund(props){
         height={'232'}
           src='/images/donate.png'
           alt='Green double couch with wooden legs'
-          borderRadius='lg'
+          
         />
         <Stack mt='6' spacing='10px'>
           <Heading 
