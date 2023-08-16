@@ -45,11 +45,11 @@ export default function Footer(){
            
                 >
              <Box
-             m={['10px','10px','auto','auto']}
-             w={['100%','100%','350px','350px']}
+           
+             w={'full'}
              h={'auto'}
           
-         
+        
         
              >
                 <Heading
@@ -61,7 +61,7 @@ export default function Footer(){
                 </Heading>
                 <Text
                 mt={'40px'}
-                fontSize={'14px'}
+                fontSize={'12px'}
                 w={'100%'}
                 h={'auto'}
                 color={'#FDFDFD'}
@@ -70,18 +70,18 @@ export default function Footer(){
                 </Box>    
                 <Box
                     m={['0px','0px','auto','auto']}
-                    w={['100%','100%','350px','350px']}
+                    w={'full'}
                     h={'auto'}
-               
+         
     
           
              >
                 <Heading
-                  fontSize={['22px','22px','25px','30px']}
+                  fontSize={'16px'}
                   fontWeight={'500'}
                   color={'#FDFDFD'}
                   lineHeight={'normal'}
-                  ml={['10px','10px','0','0']}
+                  ml={'0'}
                 >
                 Company  
                 </Heading>
@@ -89,12 +89,12 @@ export default function Footer(){
                 <OrderedList 
                 w={'100%'}
                 styleType={'none'}
-                fontSize={['15px','17px','20px','24px']}
+                fontSize={'12px'}
                 fontWeight={'500'}
                 color={'#FDFDFD'}
                 lineHeight={'normal'}
                 spacing={'25px'}
-             ml={['10px','10px','0','0']}
+             ml={'0'}
              mt={'20px'}
                 
                 >
@@ -107,17 +107,18 @@ export default function Footer(){
 
                      <Box
                               m={['0px','0px','auto','auto']}
-                              w={['100%','100%','350px','350px']}
+                              w={'full'}
                               h={'auto'}
-                              ml={'10px'}
+                             
+                          
                           
              >
                  <Heading
-                fontSize={['22px','22px','25px','30px']}
+               fontSize={'16px'}
                 fontWeight={'500'}
                 color={'#FDFDFD'}
                 lineHeight={'normal'}
-                     ml={['10px','10px','0','0']}
+                    
                 >
                 Our Contact
                 </Heading>
@@ -125,7 +126,7 @@ export default function Footer(){
                 <OrderedList 
                    w={'100%'}
                 styleType={'none'}
-            fontSize={['15px','17px','20px','24px']}
+                fontSize={'12px'}
                 fontWeight={'500'}
                 color={'#FDFDFD'}
                 lineHeight={'normal'}
@@ -145,14 +146,14 @@ export default function Footer(){
 
                      <Box
               m={['0px','0px','auto','auto']}
-              w={['100%','100%','350px','350px']}
+              w={'full'}
               h={'auto'}
-              ml={'10px'}
+            
           
            
              >
                   <Heading
-               fontSize={['22px','22px','25px','30px']}
+           fontSize={'16px'}
                 fontWeight={'500'}
                 color={'#FDFDFD'}
                 lineHeight={'normal'}
@@ -161,7 +162,7 @@ export default function Footer(){
                 </Heading>
                 
                 <OrderedList styleType={'none'}
-       fontSize={['15px','17px','20px','24px']}
+   fontSize={'12px'}
                 fontWeight={'500'}
                 color={'#FDFDFD'}
                 lineHeight={'normal'}
@@ -195,7 +196,7 @@ export default function Footer(){
                 <Text
                 mt={'10px'}
                 textAlign={'center'}
-                fontSize={'14px'}
+                fontSize={'12px'}
                 w={'100%'}
                 h={'auto'}
                 color={'#FDFDFD'}

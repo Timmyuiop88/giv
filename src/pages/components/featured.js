@@ -56,7 +56,7 @@ export default function Featured(){
                     fontWeight={'600'}
                     lineHeight={'75px'}
                     letterSpacing={'0.54px'}
-                    textAlign={'left'}
+                    textAlign={['left','left','center','center']}
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     

@@ -134,7 +134,7 @@ pr={'10px'}
 <SimpleGrid m={'auto'}  justifyContent={'center'} maxW={'7xl'} minChildWidth='350px' spacing='10px' >
   
 <Fund
-    w={['280px','320px','350px','350px']}
+    w={['full','full','350px','350px']}
 
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
@@ -144,7 +144,7 @@ pr={'10px'}
     TimeRemaining="250"
   />
     <Fund
-          w={['280px','320px','350px','350px']}
+          w={['full','full','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"
@@ -153,7 +153,7 @@ pr={'10px'}
     TimeRemaining="250"
   />
     <Fund
-    w={['280px','320px','350px','350px']}
+    w={['full','full','350px','350px']}
     fundraiserName="Organization "
     Description="Discover the inspiring stories of individuals and organizations who have used....."
     CreatedBy="4 Breath 4 Life"

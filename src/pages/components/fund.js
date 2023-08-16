@@ -16,6 +16,8 @@ Card, CardHeader, CardBody, CardFooter,
 Divider,ButtonGroup,OrderedList,ListItem
 } from "@chakra-ui/react";
 import Image from 'next/image'
+import { BiSolidUserCircle } from "react-icons/bi";
+
 export default function Fund(props){
     
     return(
@@ -40,6 +42,23 @@ export default function Fund(props){
           
           
           >Raising Money for Burnt Property</Heading>
+            <Progress borderRadius={'6px'} size='sm' value={45} />
+            <Box
+            display={'flex'}
+            justifyContent={'space-between'}
+            w={'100%'}
+            h={'auto'}
+  
+            alignItems={'center'}
+            >
+              <Text>
+                $123,000 / 175,000
+              </Text>
+            <Text>
+              24 days left
+            </Text>
+
+            </Box>
           <Text
           
            color={'#767676'}
@@ -50,30 +69,18 @@ export default function Fund(props){
            >
           Hi, I’m Debbie Lynn! I’m raising funds for my friend, Lorna Van Pelt, who has been suffering with severe…
           </Text>
-          <Progress borderRadius={'6px'} size='sm' value={45} />
-         
+          
+        
+         <Button
+         borderRadius={'20px'}
+         bg={'#FFBE37'}
+         color={'#fdfdfd'}
+         >
+          Donate now
+         </Button>
         </Stack>
       </CardBody>
-      <OrderedList 
-            
-            display={'flex'}
-            justifyContent={'space-between'}
-               
-                  color={"#434A5B"}
-                  textAlign={"left"}
-              w={'90%'}
-    listStyleType={'none'}
-              fontSize={['16px']}
-
-      
-      pr={2}
-              
-              >
-<ListItem>$244 raised</ListItem>
-<ListItem>$500 target</ListItem>
-<ListItem>24 donations</ListItem>
-
-</OrderedList>
+     
       <CardFooter>
  
  
